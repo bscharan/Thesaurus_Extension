@@ -1,0 +1,3 @@
+how to make google extension.
+
+extension needs a manifest.json file
