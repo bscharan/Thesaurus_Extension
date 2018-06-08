@@ -102,7 +102,14 @@
   "content_capabilities": ...,
   
   
-  "content_scripts": [{...}],
+ "content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["content.js"]
+  }
+],
   
   
   "content_security_policy": "policyString",
