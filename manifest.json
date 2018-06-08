@@ -3,3 +3,32 @@
   "name": "WebBook",
   "version": "1.0.0"
 }
+
+ "browser_action": { "default_icon": {                    // optional
+            "16": "images/icon16.png",           // optional
+            "24": "images/icon24.png",           // optional
+            "32": "images/icon32.png"            // optional
+			  },  
+			"default_title": "Google Mail",//toooltip      // optional; shown in tooltip
+			"default_popup": "popup.html"  //popup      // optional
+			},
+
+  "background": {
+  	/*	"scripts": [
+         "backgroundContextMenus.js",
+         "backgroundOmniBox.js",
+         "backgroundOauth.js"
+       ],
+	 */  //when there is a need to mention background scripts mentionhere
+    // Recommended
+    "persistent": false //should be false //to make it true use chrome.webrequest api ,go through for more information.
+  },
+
+"content_scripts": [
+  {
+    "matches": [
+      "<all_urls>"
+    ],
+    "js": ["content.js"]
+  }
+]
