@@ -14,12 +14,10 @@
 			},
 
   "background": {
-  	/*	"scripts": [
-         "backgroundContextMenus.js",
-         "backgroundOmniBox.js",
-         "backgroundOauth.js"
+  	"scripts": [
+         "background.js",
        ],
-	 */  //when there is a need to mention background scripts mentionhere
+	  //when there is a need to mention background scripts mentionhere
     // Recommended
     "persistent": false //should be false //to make it true use chrome.webrequest api ,go through for more information.
   },
